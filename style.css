@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+  
+  #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  /* ==== NAVBAR ==== */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 50, 0.4);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 204, 255, 0.3);
+  }
+  
+  .site-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00ccff;
+    text-shadow: 0 0 10px #00ccff;
+  }
+  
+  .navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 8px 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #00ccff;
+    background-color: rgba(0, 204, 255, 0.1);
+    box-shadow: 0 0 8px #00ccff;
+  }
+  
+  /* ==== HEADER PROFILE ==== */
+  header .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+  }
+  
+  /* ==== SECTION STYLES ==== */
+  section {
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #00ccff;
+  }
+  
+  /* ==== SKILLS & PROJECTS ==== */
+  #skills .skills-container,
+  #projects .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skill, .project {
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+    border: 2px solid rgba(0, 153, 255, 0.6);
+  }
+  
+  .skill:hover, .project:hover {
+    transform: scale(1.05);
+    border-color: #00ccff;
+    box-shadow: 0 4px 12px rgba(0, 204, 255, 0.4);
+    background-color: rgba(0, 102, 204, 0.1);
+  }
+  
+  .skill img, .project img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* ==== RECOMMENDATIONS FORM ==== */
+  #recommendations .form-group {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #recommendations .input-field {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00ccff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+  }
+  
+  #recommendations .submit-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #recommendations .submit-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  #recommendation-list ul {
+    list-style: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* ==== FOOTER ==== */
+  footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* ==== RESPONSIVE ==== */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  
+    .navbar nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .skills-container,
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill, .project {
+      width: 90%;
+    }
+  
+    #recommendations .input-field {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Dinka - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="img/backround2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <header>
+      <div class="profile">
+        <img src="img/profile.png" alt="Samuel Dinka" class="profile-img" />
+        <h1>Samuel Dinka</h1>
+      </div>
+      <div class="navbar">
+        <div class="site-name">Samuel Dinka</div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Samuel Dinka, a software enthusiast passionate about
+        technology. I love learning new things and working on projects that help
+        me grow as a developer. I'm not an expert in any specific skill but I
+        enjoy exploring and learning from different technologies.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="img/javascript-icon.png" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>
+            Learning JavaScript for web development, building interactive
+            websites and apps.
+          </p>
+        </div>
+        <div class="skill">
+          <img src="img/java-icon.png" alt="Java" />
+          <h3>Java</h3>
+          <p>
+            Exploring Java to build basic applications and improve my
+            understanding of object-oriented programming.
+          </p>
+        </div>
+        <div class="skill">
+          <img src="img/python-icon.png" alt="Python" />
+          <h3>Python</h3>
+          <p>
+            Studying Python for data analysis, web scraping, and automation
+            tasks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <h3>Project 1: Basic Calculator</h3>
+          <p>
+            A simple calculator that performs basic arithmetic operations like
+            addition, subtraction, multiplication, and division.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Project 2: Todo List</h3>
+          <p>
+            A simple to-do list application where you can add, edit, and delete
+            tasks. Built with HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Project 3: Weather App</h3>
+          <p>
+            A weather app that fetches data from a public API to show the
+            weather forecast for any city you input.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div id="recommendation-list">
+        <ul>
+          <li>
+            <strong>John Doe:</strong> Great work, Samuel! Your projects are
+            amazing.
+          </li>
+          <li>
+            <strong>Jane Smith:</strong> I admire your coding skills. Keep it
+            up, Samuel!
+          </li>
+        </ul>
+      </div>
+
+      <h3>Add Your Recommendation</h3>
+      <div class="form-group">
+        <input
+          type="text"
+          id="name"
+          class="input-field"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="new-recommendation"
+          class="input-field"
+          placeholder="Add a recommendation..."
+        />
+      </div>
+      <button class="submit-btn" onclick="addRecommendation()">Submit</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Samuel Dinka</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
